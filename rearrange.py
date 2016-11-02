@@ -11,6 +11,16 @@ def rearrange_words(words):
         del data[rand_index]
     return new_word_list
 
+def reverse_word(word):
+    reversed_word = ""
+    for i in range(len(word), 0, -1):
+        reversed_word += word[i - 1]
+    return reversed_word
+
+
 if __name__ == '__main__':
-    randomized_words = rearrange_words(data)
-    print randomized_words
+    reversed_word = reverse_word("abcdefg")
+    print reversed_word
+
+    # randomized_words = rearrange_words(data)
+    # print randomized_words
