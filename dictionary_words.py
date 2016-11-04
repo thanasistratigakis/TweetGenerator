@@ -18,8 +18,9 @@ def generateRandomSentance(word_count, word_list):
 def autocomplete(text):
     suggestions = []
     for word in word_list:
-        if text in word:
-            suggestions.append(word)
+        if len(word) > len(text):
+            if word.startswith(text):
+                suggestions.append(word)
     return suggestions
 
 print(autocomplete(text))
