@@ -16,7 +16,7 @@ def getWeightedWords(histogram):
         weighted_word = (word, current_range_value, new_current_range_value)
         current_range_value = new_current_range_value
         weighted_words.append(weighted_word)
-        print(weighted_word)
+        # print(weighted_word)
     return weighted_words
 
 def generateRandomSentence(histogram):
@@ -31,6 +31,8 @@ def generateRandomSentence(histogram):
     sentence_as_string = " ".join(sentence)
     return sentence_as_string
 
+def sentence():
+    sentence = generateRandomSentence(my_histogram)
+    return sentence
 
-
-print(generateRandomSentence(my_histogram))
+# print(generateRandomSentence(my_histogram))
